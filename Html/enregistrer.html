@@ -4,43 +4,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>S'enregistrer</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
   <header class="header">
     <div class="fullHeader">
       <div class="imageHeader">
-        <a href="accueil.html"><img src="image/logo header.png" alt="logoHeader" class="logoHeader"></a>
+        <a href="../accueil.html"><img src="../image/logo header.png" alt="logoHeader" class="logoHeader"></a>
       </div>
       <nav>
-        <a href="accueil.html" class="linkNav">ACCUEIL</a>
-        <a href="accueil.html" class="linkNav">S'ENREGISTRER</a>
-        <a href="accueil.html" class="linkNav">CONNEXION</a>
-        <a href="accueil.html" class="linkNav">FORUM</a>
+        <a href="../accueil.html" class="linkNav">ACCUEIL</a>
+        <a href="../Html/enregistrer.html" class="linkNav">S'ENREGISTRER</a>
+        <a href="../Html/connexion.html" class="linkNav">CONNEXION</a>
+        <a href="../Html/forum.html" class="linkNav">FORUM</a>
       </nav>
       <div class="reso">
-        <a href="#"><img src="image/facebook.png" alt="facebook" class="logoReso"></a>
-        <a href="#"><img src="image/instagram.png" alt="instagram" class="logoReso"></a>
+        <a href="#"><img src="../image/facebook.png" alt="facebook" class="logoReso"></a>
+        <a href="#"><img src="../image/instagram.png" alt="instagram" class="logoReso"></a>
       </div>
     </div>
   </header>
 
+
+  <!-- Debut Main -->
+  <main class="mainEnregistrer">
+    <div class="titre">
+      <h1>S'ENREGISTRER</h1>
+    </div>
+    <!-- Debut Form -->
+    <form action="../Html/connexion.html" id="formulaireEnregistrer" method="get">
+      <div class="imgFullForm">
+        <img src="../image/bg1.jpg" alt="bg1" class="imgForm">
+        <img src="../image/bg1.jpg" alt="bg1" class="imgForm">
+        <img src="../image/bg1.jpg" alt="bg1" class="imgForm">
+      </div>
+
+      <label for="nom">Votre nom :</label>
+      <input type="text" name="nom" placeholder="Savidan" class="elem-form" id="nom">
+      <span id="erreur1"></span> <br>
+
+      <label for="prenom">Votre prénom :</label>
+      <input type="text" name="prenom" placeholder="Steve" class="elem-form" id="prenom">
+      <span id="erreur2"></span> <br>
+
+      <label for="mail">Votre adresse mail :</label>
+      <input type="text" name="mail" id="mail" class="elem-form" placeholder="SSavidan@gmail.fr">
+      <span id="erreur3"></span> <br>
+
+      <label for="mdps">Votre mot de passe :</label>
+      <input type="text" name="mdps" id="mdps" class="elem-form" placeholder="********">
+      <span id="erreur4"></span><br>
+
+      <label for="cMdps">Confirmez votre mot de passe :</label>
+      <input type="text" name="cMdps" id="cMdps" class="elem-form" placeholder="********">
+      <span id="erreur5"></span> <br>
+
+      <input type="submit" class="button" value="S'enregistrer" id="submit">
+
+    </form>
+  </main>
   <footer>
     <div class="fullFooter">
       <div class="imgFooter">
-        <a href="accueil.html"><img src="image/logoFooter.png" alt="logoFooter" class="logoFooter"></a>
+        <a href="../accueil.html"><img src="../image/logoFooter.png" alt="logoFooter" class="logoFooter"></a>
       </div>
       <nav>
-        <a href="accueil.html" class="linkNav">ACCUEIL</a>
-        <a href="Html/enregistrer.html" class="linkNav">S'ENREGISTRER</a>
-        <a href="Html/connexion.html" class="linkNav">CONNEXION</a>
-        <a href="Html/forum.html" class="linkNav">FORUM</a>
+        <a href="../accueil.html" class="linkNav">ACCUEIL</a>
+        <a href="../Html/enregistrer.html" class="linkNav">S'ENREGISTRER</a>
+        <a href="../Html/connexion.html" class="linkNav">CONNEXION</a>
+        <a href="../Html/forum.html" class="linkNav">FORUM</a>
       </nav>
     </div>
+    <div class="copy">&copy; copyright, Kevin Carcel</div>
   </footer>
-  <script src="Javascript/script.js"></script>
+  <script src="../Javascript/script.js"></script>
 </body>
 
 </html>
