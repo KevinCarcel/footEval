@@ -195,3 +195,10 @@ input{
   width: 200px;
   margin-bottom: 40px;
 }
+
+/* PAGE CONNEXION */
+
+.mainConnexion{
+  background-image: url(../image/bgHeader.png);
+  padding-bottom: 80px;
+}

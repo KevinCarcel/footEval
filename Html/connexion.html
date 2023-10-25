@@ -26,7 +26,31 @@
       </div>
     </div>
   </header>
-  <main class="mainAccueil">CONNEXION</main>
+  <main class="mainConnexion">
+    <div class="titre">
+      <h1>SE CONNECTER</h1>
+    </div>
+
+    <form action="../Html/forum.html" id="formulaireConnexion" method="get">
+
+      <label for="mail">Votre identifiant (e-mail)</label>
+      <input type="text" name="mail" id="mailCo" class="elem-form" placeholder="SSavidan@gmail.fr">
+      <span id="erreur3"></span> <br>
+
+      <label for="mdps">Votre mot de passe :
+      </label>
+      <input type="text" name="mdps" id="mdpsCo" class="elem-form" placeholder="********">
+      <span id="erreur4"></span><br>
+
+      <label for="cMdps">Confirmez votre mot de passe :</label>
+      <input type="text" name="cMdps" id="cMdpsCo" class="elem-form" placeholder="********">
+      <span id="erreur5"></span> <br>
+
+      <input type="submit" class="button" value="Se connecter" id="submit2">
+
+    </form>
+
+  </main>
   <footer>
     <div class="fullFooter">
       <div class="imgFooter">
@@ -41,7 +65,7 @@
     </div>
     <div class="copy">&copy; copyright, Kevin Carcel</div>
   </footer>
-  <script src="../Javascript/script.js"></script>
+  <script src="../Javascript/scriptco.js"></script>
 </body>
 
 </html>
