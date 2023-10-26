@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -26,22 +27,67 @@
       </div>
     </div>
   </header>
-
-  <footer>
-    <div class="fullFooter">
-      <div class="imgFooter">
-        <a href="../accueil.html"><img src="../image/logoFooter.png" alt="logoFooter" class="logoFooter"></a>
+  <main class="mainSujet">
+    <main class="mainForum">
+      <div class="bonjour">
+        <p id="bonjour1"></p>
+        <p id="bonjour2"></p>
+        <p id="bonjour3"></p>
       </div>
-      <nav>
-        <a href="../accueil.html" class="linkNav">ACCUEIL</a>
-        <a href="../Html/enregistrer.html" class="linkNav">S'ENREGISTRER</a>
-        <a href="../Html/connexion.html" class="linkNav">CONNEXION</a>
-        <a href="../Html/forum.html" class="linkNav">FORUM</a>
-      </nav>
-    </div>
-    <div class="copy">&copy; copyright, Kevin Carcel</div>
-  </footer>
-  <script src="../Javascript/script.js"></script>
+      <div class="titre">
+        <h1 class="h1Modif">SUJETS : JOUEURS</h1>
+      </div>
+      <div class="fullSujet">
+        <div class="imgSujet">
+          <img src="../image/ekip.jpg" class="imgTablo" alt="ekip">
+        </div>
+        <div class="tableau">
+          <table class="fullTablo" id="fullTablo">
+            <tr>
+              <th class="caseTablo">Sujet</th>
+              <th class="caseTablo">Date</th>
+              <th class="caseTablo">Auteur</th>
+            </tr>
+
+            <tr>
+              <td><a href="../Html/sujetJoueurs.html" class="linkTab">1</a></td>
+              <td><a href="../Html/sujetJoueurs.html" class="linkTab">24/10/2023</a></td>
+              <td><a href="../Html/sujetJoueurs.html" class="linkTab">Kévin Carcel</a></td>
+            </tr>
+
+            <tr>
+              <td id="sujetTablo"></td>
+              <td id="dateTablo"></td>
+              <td id="auteurTablo"></td>
+            </tr>
+            <div class="addSujet">
+              <input type="text" class="fieldAdd" id="fieldAdd" placeholder="Ajoutez un sujet">
+              <input type="submit" value="Ajouter" id="submit" class="button">
+            </div>
+          </table>
+        </div>
+
+      </div>
+
+
+
+    </main>
+
+    <footer>
+      <div class="fullFooter">
+        <div class="imgFooter">
+          <a href="../accueil.html"><img src="../image/logoFooter.png" alt="logoFooter" class="logoFooter"></a>
+        </div>
+        <nav>
+          <a href="../accueil.html" class="linkNav">ACCUEIL</a>
+          <a href="../Html/enregistrer.html" class="linkNav">S'ENREGISTRER</a>
+          <a href="../Html/connexion.html" class="linkNav">CONNEXION</a>
+          <a href="../Html/forum.html" class="linkNav">FORUM</a>
+        </nav>
+      </div>
+      <div class="copy">&copy; copyright, Kevin Carcel</div>
+    </footer>
+    <script src="../Javascript/scriptforum.js"></script>
 </body>
 
 </html>

@@ -1,15 +1,14 @@
-body{
-  margin: 0;
-}
 /* HEADER */
-.fullHeader{
+.header{
   width: 100%;
+}
+.fullHeader{
   height: 280px;
   background-image:url(../image/bgHeader.png);
   filter: grayscale(50%);
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .logoHeader{
   height: 200px;
@@ -50,7 +49,15 @@ nav{
   justify-content: space-around;
 }
 .logoFooter{
-  height: 200px;
+  height: 160px;
+}
+.copy{
+  background-color: black;
+  color: white;
+  height: 50px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
 /* ACCUEIL */
@@ -68,9 +75,11 @@ h1{
   border-bottom: 3px solid white;
   color: white;
   border-radius: 10%;
+  margin-top: 40px;
 }
 .textTopAccueil{
   font-weight: lighter;
+  margin-top: 40px;
   margin-left: 30%;
   margin-right: 30%;
   color: white;
@@ -81,22 +90,16 @@ h1{
   display: flex;
   justify-content: space-around;
 }
-.copy{
-  background-color: black;
-  color: white;
-  height: 50px;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-}
+
 .fullBtn1{
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: rgb(135, 19, 19);
   border: ridge black 10px;
-  padding: 10px;
+  padding: 20px;
   color: white;
+  gap: 15px;
 }
 .btn1{
   color:rgb(135, 19, 19) ;
@@ -127,7 +130,8 @@ border: solid 2px white;
   align-items: center;
   background-color: white;
   border: ridge black 10px;
-  padding: 10px;
+  padding: 20px;
+  gap: 15px;
   color: rgb(135, 19, 19);
 }
 
@@ -215,6 +219,9 @@ input{
   color: white;
   border-radius: 20%;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   box-shadow: 5px 5px 5px grey;
 }
 .box2{
@@ -224,6 +231,9 @@ input{
   color:rgb(135, 19, 19);
   border-radius: 20%;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   box-shadow: 5px 5px 5px grey;
 }
 .box3{
@@ -231,6 +241,9 @@ input{
   background-color: rgb(135, 19, 19);
   color: white;
   border-radius: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   padding: 20px;
   box-shadow: 5px 5px 5px grey;
 }
@@ -282,8 +295,86 @@ input{
 }
 .bonjour{
   display: flex;
-  justify-content: space-around;
-  margin-left: 10%;
+  justify-content: space-evenly;
+  margin-left: 5%;
+  margin-top: 20px;
+
 }
+
+/* PAGE SUJETS */
+.fullSujet{
+  display: flex;
+  justify-content: space-around;
+}
+.imgTablo{
+  width: 400px;
+}
+.fullTablo{
+  border-top: 2px solid rgb(135, 19, 19) ;
+  border-bottom: 2px solid rgb(135, 19, 19) ;
+  display: flex;
+  text-align: center;
+}
+th{
+  width: 250px;
+  border: 2px solid rgb(135, 19, 19);
+  padding: 5px;
+}
+td{
+  width: 250px;
+  border: 2px solid rgb(135, 19, 19);
+  padding: 5px;
+}
+.addSujet{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.tableau{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.fieldAdd{
+  background-color: rgba(135, 19, 19, 0.37);
+  border: rgba(135, 19, 19, 0.37) groove 4px;
+  width: 75%;
+  align-self: center;
+}
+.fieldAdd::placeholder{
+  color: white;
+}
+.linkTab{
+  text-decoration: none;
+  color: black;
+}
+
+/* RESPONSIVE */
+
+
+@media only screen and (max-width: 768px){
+  /* HEADER */
+.fullHeader{
+  width: max-content;
+}
+body{
+  width: max-content;
+}
+.logoHeader{
+  width: 50%;
+  height: 50%;
+}
+nav{
+  gap: 2%;
+  margin-left: -20%;
+}
+/* FOOTER */
+.logoFooter{
+  width: 75%;
+}
+
+}
+  
+
+
 
 

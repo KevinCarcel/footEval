@@ -28,3 +28,11 @@ let bonjour3 = document.getElementById('bonjour3');
 bonjour3.textContent = ('Vous vous êtes connectés à : ' + formatHHMMSS);
 bonjour3.style.fontStyle = 'lighter';
 bonjour3.style.color = "grey";
+
+// TABLEAU
+// let tableau = document.getElementById('fullTablo');
+// let ligne = document.createElement('tr')
+// tableau.appendChild(ligne);
+
+// tableau.addEventListener('submit')
+
