@@ -134,7 +134,7 @@ formulaireEnregistrer.addEventListener('submit', function (e) {
   enreErreur5.style.color = 'green';
   enreErreur5.style.fontStyle = "italic";
 };
-});
+
 
 
  //Local storage
@@ -145,6 +145,7 @@ formulaireEnregistrer.addEventListener('submit', function (e) {
   let passwordVal = document.getElementById("mdps").value;
   
   //envoie dans le localStorage
-  localStorage.setItem("nom",prenomVal);
+  localStorage.setItem("prenom",prenomVal);
   localStorage.setItem("mail",mailVal);
   localStorage.setItem("mdps",passwordVal);
+});

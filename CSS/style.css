@@ -180,20 +180,17 @@ input{
   border: solid 2px black;
   background-color: white;
 }
-#erreur1 , #erreur2 , #erreur3 , #erreur4 , #erreur5{
+#erreur1 , #erreur2 , #erreur3 , #erreur4 , #erreur5 , #erreurCo1 , #erreurCo2{
   text-align: center;
 }
 .mainEnregistrer{
   background-image: url(../image/bgHeader.png);
   padding-bottom: 80px;
 }
-.imgFullForm{
-  display: flex;
-  justify-content: space-around;
-}
 .imgForm{
   width: 200px;
   margin-bottom: 40px;
+  align-self: center;
 }
 
 /* PAGE CONNEXION */
