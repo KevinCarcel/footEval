@@ -350,7 +350,7 @@ td{
 
 /* RESPONSIVE */
 
-
+/* TABLETTE */
 @media only screen and (max-width: 768px){
   /* HEADER */
 .fullHeader{
@@ -371,6 +371,22 @@ nav{
 .logoFooter{
   width: 75%;
 }
+/* ACCUEIL */
+.mainAccueil{
+  height: 700px;
+}
+h1{
+  margin-top: 80px;
+}
+.textTopAccueil{
+  margin-top: 80px;
+}
+.botAccueil{
+  margin-top: 80px;
+}
+}
+/* MOBILE */
+@media only screen and (max-width: 768px){
 
 }
   
