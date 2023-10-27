@@ -32,23 +32,38 @@
       <h1 class="h1Modif">SUJETS : JOUEURS</h1>
     </div>
     <div class="titre">
-      <h2>Nom du sujet</h2>
+      <h2 id="sujetName">Nom du sujet</h2>
     </div>
     <div class="fullBoxCom">
       <div class="titreBoxCom">
         <h2 class="titreComStyle">Boite de commentaires</h2>
       </div>
       <div class="boxCom">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, sed blanditiis at cumque quasi magni quis
+        <p><span class="ita">27/10/2023 à 23:12 - </span><span class="red">Jean-Claude :</span> Lorem, ipsum dolor sit
+          amet
+          consectetur
+          adipisicing elit. Ea,
+          sed
+          blanditiis at cumque quasi
+          magni quis
           obcaecati libero laudantium, necessitatibus totam quos?</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, sed blanditiis at cumque quasi magni quis
+        <p><span class="ita">27/10/2023 à 22:40 - </span><span class="red">Maurice :</span> Lorem, ipsum dolor sit amet
+          consectetur
+          adipisicing elit. Ea, sed
+          blanditiis at cumque quasi magni
+          quis
           obcaecati libero laudantium, necessitatibus totam quos?</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, sed blanditiis at cumque quasi magni quis
+        <p><span class="ita">27/10/2023 à 22:40 - </span><span class="red">Lucien :</span> Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Ea, sed
+          blanditiis at cumque quasi magni
+          quis
           obcaecati libero laudantium, necessitatibus totam quos?</p>
+
+        <p id="comAuto"></p>
       </div>
       <div class="addCom">
-        <input type="text" class="addComField">
-        <input type="submit" value="Ajouter">
+        <input type="text" class="addComField" id="addComField">
+        <input type="submit" value="Ajouter" id="submitCom" class="button">
       </div>
     </div>
   </main>
@@ -66,7 +81,7 @@
     </div>
     <div class="copy">&copy; copyright, Kevin Carcel</div>
   </footer>
-  <script src="../Javascript/script.js"></script>
+  <script src="../Javascript/scriptsujet.js"></script>
 </body>
 
 </html>

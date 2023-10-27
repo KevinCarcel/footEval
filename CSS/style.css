@@ -348,6 +348,70 @@ td{
   color: black;
 }
 
+/* PAGE SUJET */
+#sujetName{
+  font-size: 26px;
+  color: rgb(135, 19, 19);
+  border-top: 3px solid rgb(135, 19, 19);
+  border-bottom: 3px solid rgb(135, 19, 19);
+  border-radius: 10%;
+  margin-bottom: 80px;
+}
+.fullBoxCom{
+  border: ridge 10px black;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15%;
+  margin-bottom: 40px;
+  background: linear-gradient(to right,rgb(209, 67, 67),rgb(135, 19, 19));
+  animation: gradientAnimation 5s linear infinite;
+  background-size: 200% 100%;
+}
+@keyframes gradientAnimation{
+  0%{
+    background-position: 0% 50%;
+  }
+  100%{
+    background-position: 100% 50%;
+  }
+}
+.titreComStyle{
+  font-size: 26px;
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+.boxCom{
+  width: 70%;
+  height: 400px;
+  padding: 20px;
+  margin-bottom: 40px;
+  line-height: 1.25em;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(249, 240, 228);
+  box-shadow: 3px 3px 3px 3px rgb(116, 116, 116);
+}
+.red{
+  color:rgb(135, 19, 19);
+  font-weight: bold;
+}
+.ita{
+  font-style: italic;
+  color:rgb(135, 19, 19) ;
+}
+.addCom{
+  display: flex;
+  flex-direction: column;
+}
+.addComField{
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.37);
+  border: rgba(135, 19, 19, 0.37) groove 4px;
+}
+
 /* RESPONSIVE */
 
 /* TABLETTE */

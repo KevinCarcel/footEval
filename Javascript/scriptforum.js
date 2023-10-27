@@ -30,12 +30,6 @@ bonjour3.style.fontStyle = 'lighter';
 bonjour3.style.color = "grey";
 
 // TABLEAU
-// let tableau = document.getElementById ('fullTablo');
-// tableau.addEventListener('submit',function (e){
-
-// let sujetVal = document.getElementById('fieldAdd');
-// let addTR = document.createElement('tr');
-// });
 
 document.addEventListener("DOMContentLoaded", function () {
   let fullTablo = document.getElementById("fullTablo");
@@ -58,7 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Colonne 2 : Valeur saisie dans l'input
     let cell2 = newRow.insertCell(1);
     cell2.textContent = fieldAdd.value;
-
     // Colonne 3 : Date du jour
     let cell3 = newRow.insertCell(2);
     cell3.textContent = today;
@@ -71,3 +64,4 @@ document.addEventListener("DOMContentLoaded", function () {
     fieldAdd.value = "";
   });
 });
+
