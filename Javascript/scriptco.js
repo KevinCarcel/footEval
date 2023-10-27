@@ -10,7 +10,7 @@ let erreurCo1 = document.getElementById('erreurCo1');
 erreurCo1.innerHTML = 'veuillez remplir le champ vide';
 erreurCo1.style.color = 'red';
 erreurCo1.style.fontStyle = 'italic';
-e.preventDefault("");
+e.preventDefault();
   }
 // verif mail
   else if (mailCo.value !== adresseMail){
@@ -18,14 +18,13 @@ e.preventDefault("");
     erreurCo1.innerHTML = 'identifiant non reconnu';
     erreurCo1.style.color = 'red';
     erreurCo1.style.fontStyle = 'italic';
-    e.preventDefault("");
+    e.preventDefault();
   }
   else {
     let erreurCo1 = document.getElementById("erreurCo1");
     erreurCo1.innerHTML = " champ valide";
     erreurCo1.style.color = 'green';
     erreurCo1.style.fontStyle = "italic";
-    e.preventDefault("");
   };
 
   let mdpCo = document.getElementById('mdpsCo');
@@ -38,7 +37,7 @@ e.preventDefault("");
   erreurCo2.innerHTML = 'Mot de passe incorrecte';
   erreurCo2.style.color = 'red';
   erreurCo2.style.fontStyle = 'italic';
-  e.preventDefault("");
+  e.preventDefault();
 }
 else {
   let erreurCo2 = document.getElementById('erreurCo2');
