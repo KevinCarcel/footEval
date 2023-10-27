@@ -1,8 +1,8 @@
 /* HEADER */
-.header{
-  width: 100%;
+.header1{
+  width: auto;
 }
-.fullHeader{
+.header-fixe{
   height: 280px;
   background-image:url(../image/bgHeader.png);
   filter: grayscale(50%);
@@ -13,9 +13,21 @@
 .logoHeader{
   height: 200px;
 }
-nav{
+.nav-fixe{
   display: flex;
-  gap: 6%;
+  flex-direction: row;
+}
+.liste-header-fixe{
+  display: flex;
+  gap: 15%;
+}
+.link-header{
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  border: dashed white 2px;
+  padding: 5px;
+  font-weight: bold;
 }
 .linkNav{
   text-decoration: none;
@@ -24,6 +36,11 @@ nav{
   border: dashed white 2px;
   padding: 5px;
   font-weight: bold;
+}
+.link-header:hover{
+  color: black;
+  background-color: white;
+  border: solid black 2px;
 }
 .linkNav:hover{
   color: black;
@@ -58,6 +75,10 @@ nav{
   justify-content: center;
   display: flex;
   align-items: center;
+}
+.navResp{
+  display: flex;
+  gap: 10%;
 }
 
 /* ACCUEIL */
@@ -413,27 +434,18 @@ td{
 }
 
 /* RESPONSIVE */
+/* BURGER */
+@media only screen and (min-width: 769px){
+.header2{
+  display: none;
+}
+}
 
 /* TABLETTE */
 @media only screen and (max-width: 768px){
   /* HEADER */
-.fullHeader{
-  width: max-content;
-}
-body{
-  width: max-content;
-}
-.logoHeader{
-  width: 50%;
-  height: 50%;
-}
-nav{
-  gap: 2%;
-  margin-left: -20%;
-}
-/* FOOTER */
-.logoFooter{
-  width: 75%;
+.header1{
+  display: none;
 }
 /* ACCUEIL */
 .mainAccueil{
@@ -459,26 +471,15 @@ th{
 td{
   width: 150px;
 }
-/* SujetJoueurs */
-.resp{
-  width: auto;
-}
+
 }
 
 /* MOBILE */
 @media only screen and (max-width: 600px){
-/* HEADER */
-.fullHeader{
-  display: none;
-}
-/* FOOTER */
-.fullFooter{
-  display: flex;
-  flex-direction: column;
-}
-.navResp{
-margin-left: -5%;
-}
+  /* HEADER */
+  .header1{
+    display: none;
+  }
 /* ACCUEIL */
 .mainAccueil{
   height: 900px;
