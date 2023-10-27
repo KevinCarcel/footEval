@@ -448,10 +448,46 @@ h1{
 .botAccueil{
   margin-top: 80px;
 }
+/* CONNEXION */
+.mainConnexion{
+  height: 700px;
 }
-/* MOBILE */
-@media only screen and (max-width: 768px){
+/* JOUEURS */
+th{
+  width: 150px;
+}
+td{
+  width: 150px;
+}
+/* SujetJoueurs */
+.resp{
+  width: auto;
+}
+}
 
+/* MOBILE */
+@media only screen and (max-width: 600px){
+/* HEADER */
+.fullHeader{
+  display: none;
+}
+/* FOOTER */
+.fullFooter{
+  display: flex;
+  flex-direction: column;
+}
+.navResp{
+margin-left: -5%;
+}
+/* ACCUEIL */
+.mainAccueil{
+  height: 900px;
+}
+.botAccueil{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
 }
   
 
