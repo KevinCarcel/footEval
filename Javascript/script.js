@@ -85,7 +85,7 @@ formulaireEnregistrer.addEventListener('submit', function (e) {
 
   //Mot de passe
   let enreMdps = document.getElementById("mdps");
-  let regexMdps = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[#\+\-\^\[]).{8,}$/;
+  let regexMdps = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[#\+\-\^\[\]]).{8,}$/;
 
   if (enreMdps.value == "") {
     let enreErreur4 = document.getElementById("erreur4");
