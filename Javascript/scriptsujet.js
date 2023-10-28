@@ -1,5 +1,7 @@
 let prenomUser = localStorage.getItem('prenom');
 let submitCom = document.getElementById('submitCom')
+let boxCom = document.getElementById('boxCom')
+
 submitCom.addEventListener("click", function () {
 
   // Date du message
@@ -13,10 +15,10 @@ submitCom.addEventListener("click", function () {
   let formatJourCom = jourCom.toString().padStart(2,'0');
   let formatMoisCom = moisCom.toString().padStart(2,'0');
   let formatAnneeCom = anneeCom.toString().padStart(2,'0');
-  let formatHeureCom = heures.toString().padStart(2,'0');
-  let formatMinutesCom = minutes.toString().padStart(2,'0');
+  let formatHeureCom = heuresCom.toString().padStart(2,'0');
+  let formatMinutesCom = minutesCom.toString().padStart(2,'0');
   
-  let formatHHMMSSCom= formatJourCom + "/" + formatMoisCom + "/" + formatAnneeCom + "à" + formatHeureCom + ":" + formatMinutesCom;
+  let formatHHMMSSCom= formatJourCom + "/" + formatMoisCom + "/" + formatAnneeCom + " à " + formatHeureCom + ":" + formatMinutesCom;
 
 // Prenom
 let prenomUser = localStorage.getItem('prenom');
@@ -25,12 +27,13 @@ let prenomUser = localStorage.getItem('prenom');
 let addComField = document.getElementById("addComField");
 let commentaireUser = addComField.value;
 
-// Affichage Final
-let comFinal = document.getElementById("comAuto");
-comFinal.textContent = (formatHHMMSSCom + " - " + prenomUser + " : " + commentaireUser);
-comFinal.style.color = 'black';
-let para = document.createElement("p");
-para.textContent = comFinal;
-document.getElementById("boxCom").appendChild(para);
-document.getElementById("para").value = "";
+// creer éléments
+let nouveauCommentaire = document.createElement("p");
+  nouveauCommentaire.innerHTML =`<span class="ita"> ${formatHHMMSSCom} - </span><span class="red">${prenomUser} : </span> ${commentaireUser}`;
+
+  // ajout à la box
+  boxCom.appendChild(nouveauCommentaire);
+// reset
+  addComField.value = "";
+
 })
