@@ -51,7 +51,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Colonne 2 : Valeur saisie dans l'input
     let cell2 = newRow.insertCell(1);
-    cell2.textContent = fieldAdd.value;
+    let nomSujet = fieldAdd.value;
+    cell2.textContent = nomSujet;
     // Colonne 3 : Date du jour
     let cell3 = newRow.insertCell(2);
     cell3.textContent = today;
@@ -60,6 +61,10 @@ document.addEventListener("DOMContentLoaded", function () {
     let cell4 = newRow.insertCell(3);
     cell4.textContent = prenomBjr;
 
+ // LOCAL STORAGE
+    // récup de l'id
+    localStorage.setItem("valeurCellule2", nomSujet);
+  
     // Réinitialiser la valeur de l'input
     fieldAdd.value = "";
   });

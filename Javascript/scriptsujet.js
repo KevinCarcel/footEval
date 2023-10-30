@@ -1,3 +1,9 @@
+let nomSujet = localStorage.getItem('valeurCellule2');
+let sujetName = document.getElementById('sujetName');
+
+sujetName.textContent = (nomSujet);
+
+
 let prenomUser = localStorage.getItem('prenom');
 let submitCom = document.getElementById('submitCom')
 let boxCom = document.getElementById('boxCom')
