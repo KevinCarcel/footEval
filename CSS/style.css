@@ -495,14 +495,16 @@ form{
   .fullForum{
     display: flex;
     flex-direction: column;
+    margin-top: 0px;
     gap: 50px;
+    font-size: 12px;
   }
   .box1 , .box2 , .box3{
     display: flex;
     flex-direction: row;
     padding: 5px;
+    width: 500px;
     gap: 3px;
-    width: 75%;
     align-self: center;
   }
   .goal , .goal2{
@@ -513,12 +515,33 @@ form{
     margin-left: 10%;
     margin-right: 10%;
   }
+  .titreSujet{
+    align-self: center;
+  }
 /* JOUEURS */
 th{
   width: 150px;
 }
 td{
   width: 150px;
+}
+.fullSujet{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+/* SUJETS JOUEURS */
+.fullBoxCom{
+  width: 100%;
+  margin-left: 0;
+}
+.boxCom{
+  width: 90%;
+  font-size: 12px;
+}
+.addComField{
+  width: 250px;
 }
 }
 /* FIN TABLETTE */
@@ -565,6 +588,22 @@ td{
 .textTopAccueil{
   margin-left: 5%;
   margin-right: 5%;
+}
+
+/* JOUEURS */
+.imgTablo{
+  width: 250px;
+}
+.bonjour{
+  font-size: 10px;
+}
+
+/* FORUM */
+.box1 , .box2 , .box3 {
+  width: 90%;
+}
+.titreSujet{
+  font-size: 20px;
 }
 }
   
