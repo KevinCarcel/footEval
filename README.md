@@ -21,7 +21,6 @@ To make this project, i used the following language :
 - JAVASCRIPT .
 
 and this frameworks :
-
 - [bootstrap.](https://getbootstrap.com/) 
 
 ## Features
@@ -29,3 +28,6 @@ and this frameworks :
 this website allows you to register, login and talk with other persons .
 You can make subject in the forum menu and discuss with other fans in the commentary box available .
 
+
+## Developer
+*This website is developed by Kévin Carcel.*
